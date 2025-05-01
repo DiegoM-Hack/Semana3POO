@@ -32,6 +32,7 @@ public class Main {
         int experiencia2 = sc.nextInt();
         System.out.println("Ingrese especialidad: ");
         String especialidad2 = sc.nextLine();
+        sc.nextLine();
         Cocinero cocinero3 = new Cocinero(nombre2, experiencia2, especialidad2);
 
 
