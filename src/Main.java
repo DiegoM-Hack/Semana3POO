@@ -5,6 +5,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         //Diego Montaluisa
+        //Parte1
         System.out.println("Ingrese nombre del cocinero: ");
         String nombre = sc.nextLine();
         System.out.println("Ingrese los años experiencia: ");
