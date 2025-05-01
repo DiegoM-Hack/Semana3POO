@@ -6,7 +6,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         //Diego Montaluisa
         //Parte1
-        System.out.println("Ingrese nombre del cocinero: ");
+        /*System.out.println("Ingrese nombre del cocinero: ");
         String nombre = sc.nextLine();
         System.out.println("Ingrese los años experiencia: ");
         int experiencia = sc.nextInt();
@@ -14,7 +14,7 @@ public class Main {
         String especialidad = sc.nextLine();
         sc.nextLine();
 
-        Cocinero cocinero1 = new Cocinero(nombre, experiencia, especialidad);
+        //Cocinero cocinero1 = new Cocinero(nombre, experiencia, especialidad);
 
 
         System.out.println("Ingrese nombre del cocinero: ");
@@ -34,12 +34,37 @@ public class Main {
         String especialidad2 = sc.nextLine();
         sc.nextLine();
         Cocinero cocinero3 = new Cocinero(nombre2, experiencia2, especialidad2);
+*/
+
+        System.out.println("Ingrese cantidad de cocineros: ");
+        int a =sc.nextInt();
+        sc.nextLine();
+        Cocinero[] cocineros = new Cocinero[a];
 
 
 
-        cocinero1.mostrarInfo();
-        cocinero2.mostrarInfo();
-        cocinero3.mostrarInfo();
+        for (int i = 0; i < a; i++) {
+
+            System.out.println("Ingrese nombre del cocinero: ");
+            String nombre = sc.nextLine();
+            System.out.println("Ingrese los años experiencia: ");
+            int experiencia = sc.nextInt();
+            System.out.println("Ingrese especialidad: ");
+            String especialidad = sc.nextLine();
+            sc.nextLine();
+            cocineros[i] = new Cocinero(nombre, experiencia, especialidad);
+
+
+        }
+        System.out.println("\nInformación de los cocineros:");
+        for (Cocinero cocinero : cocineros) {
+            cocinero.mostrarInfo(); // Mostrar información de cada cocinero
+        }
+
+
+        //cocinero1.mostrarInfo();
+        //cocinero2.mostrarInfo();
+        //cocinero3.mostrarInfo();
         sc.close();
     }
 }
