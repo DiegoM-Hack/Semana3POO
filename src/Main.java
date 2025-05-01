@@ -50,8 +50,8 @@ public class Main {
             System.out.println("Ingrese los años experiencia: ");
             int experiencia = sc.nextInt();
             System.out.println("Ingrese especialidad: ");
-            String especialidad = sc.nextLine();
             sc.nextLine();
+            String especialidad = sc.nextLine();
             cocineros[i] = new Cocinero(nombre, experiencia, especialidad);
 
 
